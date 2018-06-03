@@ -3,21 +3,4 @@
     <string name="icon_text1">搜索</string>
     <string name="icon_text2">地图</string>
     <string name="icon_text3">我</string>
-    <string name="sousuo">搜索</string>
-    <string name="problem">&#160;&#160;&#160;房源有问题？&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;举报投诉></string>
-    <string name="yuyue">预约</string>
-    <string name="time">预约时间</string>
-    <string name="information">房源信息</string>
-    <string name="look">房屋预约</string>
-    <string name="attion">信息确认后，欢迎前往入住，如有疑问，请联系客服。</string>
-    <string name="once">立即预约</string>
-    <string name="dqfy">当前费用:</string>
-    <string name="fang_name">ofo house</string>
-    <string name="rzsj">入住时间</string>
-    <string name="zfjs">住房结束</string>
-    <string name="zf">本次支付</string>
-    <string name="live_time">累计住房时间</string>
-    <string name="pj">评价一下本次住房</string>
-    <string name="ckxc">查看住房</string>
 </resources>
