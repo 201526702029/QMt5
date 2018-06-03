@@ -3,8 +3,9 @@
     package="com.example.asus.qmt5">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     !--获取短信验证码的权限--
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -26,7 +27,7 @@
     <!-- 允许应用程序写入到外部存储器 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 允许应用程序读取或写入系统设置 -->
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
 
     <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -43,7 +44,7 @@
     <!-- 用于读取手机当前的状态 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- SD卡读取权限，用户写入离线定位数据 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
 
@@ -53,6 +54,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -60,7 +62,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="HFt5W5KoetwB0NiBXKQgD8iGSE78gayF" />
@@ -71,18 +72,23 @@
             android:enabled="true"
             android:process=":remote" />
 
+        <activity android:name=".BasicView.MainActivity" />
+        <activity android:name=".Personalcenter.personalcenter" />
+        <activity android:name=".Map.map" />
+        <activity android:name=".SearchHome.searchhome" />
+        <activity android:name=".House.LieBiao">
 
-
-        <activity android:name=".BasicView.MainActivity">
+        </activity>
+        <activity android:name=".House.TuiFang"></activity>
+        <activity android:name=".House.JiuDian" />
+        <activity android:name=".House.YuYue" />
+        <activity android:name=".House.Hours" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Personalcenter.personalcenter" />
-        <activity android:name=".Map.map" />
-        <activity android:name=".SearchHome.searchhome"></activity>
     </application>
 
 </manifest>
